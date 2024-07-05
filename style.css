@@ -1,0 +1,76 @@
+.fly-out-btn{
+    position: fixed !important;
+    top:20%;
+    right:0;
+    z-index: 999;
+    display:grid;
+    gap:20px;
+
+}
+
+.fly-out-btn img{
+    width: 75px;
+    cursor: pointer;
+    opacity: .5;
+    transition: all .3s;
+}
+.fly-out-btn img:hover{
+    opacity: 1
+}
+.fly-out-content{
+    background: #fff;
+    max-width: 100%;
+    overflow-y: auto;
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    right:-100%;
+    width: 300px;
+    z-index: 9999;
+    height: 900px;
+    transition: all .3s;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 0.125rem 0.25rem;
+}
+
+.flyout-content-body{
+    padding: 40px 0;
+}
+
+.error-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.helpline-content .error-icon{
+    font-size: 25px;
+    font-weight: 700;
+    gap:8px;
+}
+.flyout-close{
+    cursor: pointer;
+}
+
+.fly-button{
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border:1px solid var(--primary);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.fly-out-helplines{
+    margin: 25px 0;
+}
+
+.fly-out-content.active{
+    right:0;
+    transition: all .3s;
+}
+
+
+
